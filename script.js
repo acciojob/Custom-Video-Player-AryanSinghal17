@@ -38,14 +38,12 @@ toggle.addEventListener("click", function() {
     }
 });
 
-// time 
-video.addEventListener("timeupdate", function() {
-
+function handleProgress() {
     const percent = (video.currentTime / video.duration) * 100;
+    progressBar.style.flexBasis = `${percent}%`;
+}
 
-    progressBar.style.width = `${percent}%`;
-
-});
+video.addEventListener("timeupdate", handleProgress);
 
 // skip button
 
