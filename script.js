@@ -43,7 +43,7 @@ video.addEventListener("timeupdate", function() {
 
     const percent = (video.currentTime / video.duration) * 100;
 
-    progressBar.style.flexBasis = `${percent}%`;
+    progressBar.style.width = `${percent}%`;
 
 });
 
