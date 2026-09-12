@@ -160,3 +160,13 @@ input[type=range]::-moz-range-thumb {
   background: #ffc600;
   cursor: pointer;
 }
+.progress {
+  height: 5px;
+  background: rgba(0,0,0,0.5);
+}
+
+.progress__filled {
+  width: 0%;
+  height: 100%;
+  background: #ffc600;
+}
