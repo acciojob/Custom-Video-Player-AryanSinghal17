@@ -46,7 +46,7 @@ skipButtons.forEach(button => {
 // Progress Bar
 function handleProgress() {
     const percent = (video.currentTime / video.duration) * 100;
-    progressBar.style.flexBasis = `${percent}%`;
+    progressBar.style.width = percent + "%";
 }
 
-video.addEventListener('timeupdate', handleProgress);
+video.addEventListener("timeupdate", handleProgress);
